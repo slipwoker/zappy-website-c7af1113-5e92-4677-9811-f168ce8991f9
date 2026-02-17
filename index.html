@@ -1,0 +1,612 @@
+<!DOCTYPE html><html lang="he" dir="rtl"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>בינגו איתור נזקי מים ופתרונות אל הרס | חברת איתור נזקי מים לחברות ביטוח</title>
+  <meta name="description" content="בית - בינגו איתור נזקי מים ופתרונות אל הרס provides professional General services. Specializing in חברת איתור נזקי מים לחברות ביטוח.">
+  <meta name="keywords" content="חברת איתור נזקי מים לחברות ביטוח, איתור נזילות במצלמה תרמית, שירותי איתור נזקי מים למנהלי נכסים, איתור נזילות מים מתקדם">
+  <meta name="robots" content="index, follow">
+  
+  <meta property="og:title" content="בינגו איתור נזקי מים ופתרונות אל הרס | חברת איתור נזקי מים לחברות ביטוח">
+  <meta property="og:description" content="בית - בינגו איתור נזקי מים ופתרונות אל הרס provides professional General services. Specializing in חברת איתור נזקי מים לחברות ביטוח.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="he_IL">
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="בינגו איתור נזקי מים ופתרונות אל הרס | חברת איתור נזקי מים לחברות ביטוח">
+  <meta name="twitter:description" content="בית - בינגו איתור נזקי מים ופתרונות אל הרס provides professional General services. Specializing in חברת איתור נזקי מים לחברות ביטוח.">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48x48.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/assets/favicon-512x512.png">
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+    <!-- Cookie Consent -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.umd.js"></script>
+    <!-- Mickidum Accessibility Toolbar -->
+    <script src="https://cdn.jsdelivr.net/gh/mickidum/acc_toolbar/acctoolbar/acctoolbar.min.js"></script>
+<!-- Zappy Analytics -->
+<script>
+(function() {
+  'use strict';
+  
+  // Configuration
+  var config = {
+    websiteId: 'c7af1113-5e92-4677-9811-f168ce8991f9',
+    apiUrl: 'https://api.zappy5.com/api/analytics/track',
+    sessionDuration: 30 * 60 * 1000, // 30 minutes
+    visitorDuration: 30 * 24 * 60 * 60 * 1000, // 30 days
+    trackPageViews: true,
+    trackClicks: true,
+    trackFormSubmissions: true
+  };
+  
+  // Generate or retrieve persistent visitor ID (30 days)
+  function getVisitorId() {
+    var visitorKey = 'zappy_visitor_' + config.websiteId;
+    var visitor = null;
+    
+    try {
+      visitor = localStorage.getItem(visitorKey);
+      if (visitor) {
+        var visitorData = JSON.parse(visitor);
+        var now = Date.now();
+        
+        // Check if visitor ID is still valid (30 days)
+        if (now - visitorData.created < config.visitorDuration) {
+          // Update last seen timestamp
+          visitorData.lastSeen = now;
+          localStorage.setItem(visitorKey, JSON.stringify(visitorData));
+          return visitorData.id;
+        }
+      }
+    } catch (e) {
+      console.warn('Zappy Analytics: LocalStorage not available');
+    }
+    
+    // Generate new visitor ID
+    var newVisitorId = 'zv_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+    
+    try {
+      localStorage.setItem(visitorKey, JSON.stringify({
+        id: newVisitorId,
+        created: Date.now(),
+        lastSeen: Date.now()
+      }));
+    } catch (e) {
+      // Continue without local storage
+    }
+    
+    return newVisitorId;
+  }
+  
+  // Generate or retrieve session ID (30 minutes)
+  function getSessionId() {
+    var sessionKey = 'zappy_session_' + config.websiteId;
+    var session = null;
+    
+    try {
+      session = sessionStorage.getItem(sessionKey);
+      if (session) {
+        var sessionData = JSON.parse(session);
+        var now = Date.now();
+        
+        // Check if session is still valid
+        if (now - sessionData.timestamp < config.sessionDuration) {
+          // Update timestamp
+          sessionData.timestamp = now;
+          sessionStorage.setItem(sessionKey, JSON.stringify(sessionData));
+          return sessionData.id;
+        }
+      }
+    } catch (e) {
+      console.warn('Zappy Analytics: SessionStorage not available');
+    }
+    
+    // Generate new session ID
+    var newSessionId = 'zs_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+    
+    try {
+      sessionStorage.setItem(sessionKey, JSON.stringify({
+        id: newSessionId,
+        timestamp: Date.now()
+      }));
+    } catch (e) {
+      // Continue without session storage
+    }
+    
+    return newSessionId;
+  }
+  
+  var visitorId = getVisitorId();
+  var sessionId = getSessionId();
+  
+  // Track an event
+  function trackEvent(eventType, data) {
+    data = data || {};
+    
+    var eventData = {
+      website_id: config.websiteId,
+      event_type: eventType,
+      page_path: window.location.pathname,
+      referrer: document.referrer || 'direct',
+      visitor_id: visitorId,
+      session_id: sessionId,
+      metadata: data
+    };
+    
+    // Use sendBeacon if available (better for page unload events)
+    if (navigator.sendBeacon) {
+      var blob = new Blob([JSON.stringify(eventData)], { type: 'application/json' });
+      navigator.sendBeacon(config.apiUrl, blob);
+    } else {
+      // Fallback to fetch
+      fetch(config.apiUrl, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(eventData),
+        keepalive: true
+      }).catch(function(error) {
+        console.warn('Zappy Analytics: Failed to track event', error);
+      });
+    }
+  }
+  
+  // Track page view
+  if (config.trackPageViews) {
+    trackEvent('pageview', {
+      title: document.title,
+      url: window.location.href
+    });
+  }
+  
+  // Track clicks on important elements
+  if (config.trackClicks) {
+    document.addEventListener('click', function(e) {
+      var target = e.target;
+      
+      // Track button clicks (counted as actions)
+      if (target.tagName === 'BUTTON' || target.closest('button')) {
+        var button = target.tagName === 'BUTTON' ? target : target.closest('button');
+        trackEvent('click', {
+          element: 'button',
+          text: button.textContent.trim().substring(0, 100),
+          id: button.id || null,
+          class: button.className || null
+        });
+      }
+      
+      // Track link clicks (navigation - not counted as actions)
+      else if (target.tagName === 'A' || target.closest('a')) {
+        var link = target.tagName === 'A' ? target : target.closest('a');
+        trackEvent('navigation', {
+          element: 'link',
+          text: link.textContent.trim().substring(0, 100),
+          href: link.href,
+          external: link.hostname !== window.location.hostname
+        });
+      }
+    }, true);
+  }
+  
+  // Track form submissions
+  if (config.trackFormSubmissions) {
+    document.addEventListener('submit', function(e) {
+      var form = e.target;
+      
+      trackEvent('form_submit', {
+        form_id: form.id || null,
+        form_name: form.name || null,
+        form_action: form.action || null,
+        form_method: form.method || 'GET'
+      });
+    }, true);
+  }
+  
+  // Track time on page (send on page unload)
+  var pageLoadTime = Date.now();
+  
+  window.addEventListener('beforeunload', function() {
+    var timeOnPage = Math.floor((Date.now() - pageLoadTime) / 1000); // in seconds
+    
+    trackEvent('page_unload', {
+      time_on_page: timeOnPage,
+      page_path: window.location.pathname
+    });
+  });
+  
+  // Expose tracking function globally for custom events
+  window.zappyAnalytics = {
+    track: trackEvent,
+    getVisitorId: function() { return visitorId; },
+    getSessionId: function() { return sessionId; }
+  };
+  
+})();
+</script>
+<!-- End Zappy Analytics -->
+
+    <style id="zappy-dropdown-submenu-styles">
+      /* ========== DESKTOP DROPDOWN SUBMENU STYLES ========== */
+      /* Base styles for dropdown submenus - parent must be positioned */
+      .nav-menu li:has(.sub-menu), nav li:has(.sub-menu), .navbar li:has(.sub-menu), #navMenu li:has(.sub-menu) { position: relative; }
+      /* Submenu base - hidden by default */
+      .nav-menu .sub-menu, nav .sub-menu, .navbar .sub-menu, #navMenu .sub-menu { display: block !important; position: absolute !important; top: 100%; left: 0; min-width: 220px; background: white; border-radius: 8px; box-shadow: 0 8px 25px rgba(0,0,0,0.15); padding: 8px 0; opacity: 0; visibility: hidden; transform: translateY(10px); transition: all 0.3s ease; z-index: 1000; list-style: none; pointer-events: none; }
+      /* CRITICAL: Desktop hover styles to show dropdown */
+      .nav-menu li:hover > .sub-menu, nav li:hover > .sub-menu, .navbar li:hover > .sub-menu, #navMenu li:hover > .sub-menu { opacity: 1 !important; visibility: visible !important; transform: translateY(0) !important; pointer-events: auto !important; }
+      /* Submenu item styling */
+      .sub-menu li { list-style: none; margin: 0; padding: 0; }
+      .sub-menu a { display: block !important; padding: 10px 16px !important; color: #333 !important; font-weight: 500; text-decoration: none; white-space: nowrap; transition: background-color 0.2s; }
+      .sub-menu a:hover { background-color: #f5f5f5; }
+      /* RTL (Hebrew/Arabic) dropdown positioning */
+      [dir="rtl"] .nav-menu .sub-menu, [dir="rtl"] nav .sub-menu, [dir="rtl"] .navbar .sub-menu, html[lang="he"] .nav-menu .sub-menu, html[lang="he"] nav .sub-menu, html[lang="he"] .navbar .sub-menu, html[lang="ar"] .nav-menu .sub-menu, html[lang="ar"] nav .sub-menu, html[lang="ar"] .navbar .sub-menu { left: auto !important; right: 0 !important; }
+      /* Hide empty dropdown menus */
+      .sub-menu:empty, .sub-menu:not(:has(li:not(.zappy-hidden-menu-item))), .sub-menu:not(:has(li)) { display: none !important; opacity: 0 !important; visibility: hidden !important; pointer-events: none !important; }
+      /* Desktop: show submenu on Menu Group hover */
+      li:has(.menu-group-title):hover > .sub-menu { opacity: 1 !important; visibility: visible !important; transform: translateY(0) !important; pointer-events: auto !important; }
+      /* Menu Group title styling */
+      .nav-menu > li > .menu-group-title, #navMenu > li > .menu-group-title { display: inline-block; padding: 0.5rem 1rem; cursor: default; user-select: none; }
+      
+      /* ========== MOBILE SUBMENU STYLES ========== */
+      @media (max-width: 768px) {
+        .nav-menu .sub-menu, nav .sub-menu, .navbar .sub-menu, #navMenu .sub-menu { position: static !important; transform: none !important; box-shadow: none !important; background: transparent !important; max-height: 0; overflow: hidden; opacity: 0; visibility: hidden; transition: max-height 0.3s ease, opacity 0.3s ease; padding: 0 !important; border-radius: 0 !important; }
+        .sub-menu.mobile-expanded { max-height: 500px !important; opacity: 1 !important; visibility: visible !important; padding: 8px 0 8px 16px !important; }
+        [dir="rtl"] .sub-menu.mobile-expanded, html[lang="he"] .sub-menu.mobile-expanded { padding: 8px 16px 8px 0 !important; }
+        /* Disable hover behavior on mobile */
+        .nav-menu li:hover > .sub-menu, nav li:hover > .sub-menu, .navbar li:hover > .sub-menu, #navMenu li:hover > .sub-menu { opacity: 0; visibility: hidden; pointer-events: none; }
+        .nav-menu li > .sub-menu.mobile-expanded, nav li > .sub-menu.mobile-expanded, .navbar li > .sub-menu.mobile-expanded, #navMenu li > .sub-menu.mobile-expanded { opacity: 1 !important; visibility: visible !important; pointer-events: auto !important; }
+        .nav-menu li:has(.sub-menu), nav li:has(.sub-menu), .navbar li:has(.sub-menu), #navMenu li:has(.sub-menu) { display: flex !important; flex-wrap: wrap !important; align-items: center !important; }
+        .nav-menu li:has(.sub-menu) > a, nav li:has(.sub-menu) > a, .navbar li:has(.sub-menu) > a, #navMenu li:has(.sub-menu) > a { flex: 1 !important; }
+        .nav-menu li:has(.sub-menu) > a [class*="chevron"], .nav-menu li:has(.sub-menu) > a [class*="arrow"], .nav-menu li:has(.sub-menu) > a .fa-chevron-down, .nav-menu li:has(.sub-menu) > a .fa-angle-down, nav li:has(.sub-menu) > a [class*="chevron"], nav li:has(.sub-menu) > a [class*="arrow"], #navMenu li:has(.sub-menu) > a [class*="chevron"], #navMenu li:has(.sub-menu) > a [class*="arrow"] { display: none !important; visibility: hidden !important; }
+        .mobile-submenu-toggle { display: flex !important; align-items: center !important; justify-content: center !important; width: 44px !important; height: 44px !important; background: transparent !important; border: none !important; cursor: pointer !important; }
+        .mobile-submenu-toggle::after { content: '' !important; width: 0 !important; height: 0 !important; border-left: 6px solid transparent !important; border-right: 6px solid transparent !important; border-top: 7px solid currentColor !important; transition: transform 0.3s ease !important; }
+        .mobile-submenu-toggle.expanded::after { transform: rotate(180deg) !important; }
+        .nav-menu li:has(.sub-menu) > .sub-menu, nav li:has(.sub-menu) > .sub-menu { flex-basis: 100% !important; width: 100% !important; }
+        .sub-menu a { padding: 10px 0 !important; display: block !important; }
+        .nav-menu li:has(.sub-menu) > .menu-group-title, nav li:has(.sub-menu) > .menu-group-title, .navbar li:has(.sub-menu) > .menu-group-title, #navMenu li:has(.sub-menu) > .menu-group-title { flex: 1 !important; }
+      }
+      @media (min-width: 769px) { .mobile-submenu-toggle { display: none !important; } }
+    </style>
+</head>
+<body>
+  <nav class="navbar" dir="rtl">
+  <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+    <svg class="hamburger-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+      <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+    </svg>
+    <svg class="close-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" style="display:none;">
+      <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+    </svg>
+  </button>
+  
+  <button class="phone-header-btn" aria-label="Call">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+    </svg>
+  </button>
+  
+  <div class="nav-container">
+    <div class="nav-brand">
+      <a href="/" class="logo-link">
+        <img src="/assets/general-logo.webp" alt="בינגו איתור נזקי מים ופתרונות אל הרס" class="logo" />
+      </a>
+    </div>
+    
+    <ul class="nav-menu" id="navMenu"><li><a href="/about">אודות</a></li><li><a href="/services">שירותים</a></li></ul>
+    
+    <div class="nav-cta-container">
+      <a href="/contact" class="nav-cta-btn">צור קשר</a>
+    </div>
+  </div>
+</nav>
+  
+  <main>
+    <section class="home-hero-section" data-layout-spec="בית-hero" data-hero-type="fullscreen-scrim">
+  <div class="home-hero-bg-wrapper">
+    <img data-hero-bg="true" data-placeholder="home-hero-bg" data-context="Cinematic macro photography of water droplets on dark glass surface with deep blue-teal tones, creating an abstract water damage detection theme. Sharp focus on water beads with soft bokeh background, professional lighting with subtle reflections. Moody, editorial style for a water leak detection business hero image." width="1920" height="1080" src="/assets/site-home-hero-bg.webp" alt="רקע מקרו של טיפות מים על זכוכית - בינגו איתור נזקי מים" class="home-hero-bg-image">
+  </div>
+  
+  <div class="home-hero-scrim" aria-hidden="true"></div>
+  
+  <div class="home-hero-overlay-group">
+    <h1>איתור נזקי מים מקצועי</h1>
+    <h3>פתרונות מתקדמים ללא הרס לחברות ביטוח ולקוחות פרטיים</h3>
+    <div class="home-hero-cta-row">
+      <a href="/contact" class="home-hero-btn-primary">צור קשר</a>
+      <a href="/services" class="home-hero-btn-secondary">הצג שירותים</a>
+    </div>
+  </div>
+  
+  <div class="home-hero-divider-wrapper">
+    <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 1200 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,100 L0,65 Q80,50 160,58 T320,52 Q400,60 480,48 T640,55 Q720,48 800,58 T960,50 Q1040,58 1120,52 T1200,60 L1200,100 Z" fill="var(--bg-light)"></path>
+    </svg>
+  </div>
+</section>
+
+<section class="home-services-section" data-layout-spec="בית-services">
+  <div class="home-services-container">
+    <div class="home-services-grid">
+      <div class="home-services-content">
+        <h2>שירותי איתור נזילות מתקדמים</h2>
+        <p>אנו מספקים פתרונות מקצועיים לאיתור נזקי מים באמצעות טכנולוגיות מתקדמות ללא הריסה. כל שירות מותאם לצרכים הייחודיים שלכם.</p>
+        
+        <div class="home-services-list">
+          <div class="home-services-item">
+            <h3>איתור נזילות במצלמה תרמית</h3>
+            <p>טכנולוגיית הדמיה תרמית מתקדמת המאתרת נזילות נסתרות מאחורי קירות וריצפות ללא צורך בפירוק או הריסה. קבלת תוצאות מדויקות תוך שעות ספורות.</p>
+          </div>
+          
+          <div class="home-services-item">
+            <h3>שירותי איתור נזקי מים למנהלי נכסים</h3>
+            <p>פתרונות מותאמים לניהול נכסים מרובים עם דיווח מפורט ותיעוד מקצועי. מעקב שוטף ומניעת נזקים עתידיים באמצעות בדיקות תקופתיות.</p>
+          </div>
+          
+          <div class="home-services-item">
+            <h3>תיאום מול חברות ביטוח</h3>
+            <p>ליווי מלא בתהליך התביעה כולל תיעוד מקצועי, הכנת דוחות מפורטים ותיאום ישיר עם חברות הביטוח. חיסכון בזמן ומקסום סיכויי האישור.</p>
+          </div>
+        </div>
+        
+        <p class="home-services-note">כל תהליך איתור מתבצע בקפידה ומקצועיות מלאה, עם התחייבות לתוצאות מדויקות.</p>
+      </div>
+      
+      <div class="home-services-image-column">
+        <div class="home-services-image-wrapper">
+          <img data-placeholder="home-services-image-1" data-context="Macro photography of water droplets on a technical surface with subtle topographic line patterns overlay, scientific editorial style, clean and refined aesthetic for water damage detection business" width="600" height="800" src="/assets/site-home-services-image-1.webp" alt="טכנולוגיית איתור נזילות מתקדמת">
+          <svg class="home-services-topo-overlay" data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 600 800" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <g fill="none" stroke="currentColor" stroke-opacity="0.12" stroke-width="1.5">
+              <path d="M-20 650 C 120 590, 220 680, 350 625 S 570 580, 650 630"></path>
+              <path d="M-20 610 C 140 550, 240 645, 370 585 S 590 545, 650 595"></path>
+              <path d="M-20 570 C 150 515, 270 610, 390 545 S 610 505, 650 560"></path>
+              <path d="M-20 530 C 170 470, 290 575, 410 505 S 630 465, 650 525"></path>
+              <path d="M-20 490 C 180 435, 310 540, 430 465 S 650 425, 650 490"></path>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="home-services-divider-wrapper">
+    <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 1200 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="home-services-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" style="stop-color:var(--accent);stop-opacity:1"></stop>
+          <stop offset="40%" style="stop-color:var(--accent);stop-opacity:0.6"></stop>
+          <stop offset="100%" style="stop-color:var(--bg-dark);stop-opacity:1"></stop>
+        </linearGradient>
+      </defs>
+      <path d="M0,120 L0,45 L200,45 L200,40 Q210,38 220,40 L220,45 L240,45 L240,42 Q250,39 260,42 L260,45 L280,45 L280,38 Q295,35 310,38 L310,45 L340,45 L340,43 Q355,40 370,43 L370,45 L400,45 L400,40 Q415,37 430,40 L430,45 L460,45 L460,42 Q475,39 490,42 L490,45 L520,45 L520,38 Q540,34 560,38 L560,45 L600,45 L600,43 Q620,40 640,43 L640,45 L680,45 L680,40 Q700,36 720,40 L720,45 L760,45 L760,42 Q780,38 800,42 L800,45 L840,45 L840,39 Q865,35 890,39 L890,45 L930,45 L930,43 Q955,39 980,43 L980,45 L1020,45 L1020,40 Q1045,36 1070,40 L1070,45 L1120,45 L1120,42 Q1145,38 1170,42 L1170,45 L1200,45 L1200,120 Z" fill="url(#home-services-gradient)"></path>
+    </svg>
+  </div>
+</section>
+
+<section class="home-showcase-section" data-layout-spec="בית-showcase">
+  <div class="home-showcase-container">
+    <div class="home-showcase-header">
+      <h2>תיקי הצלחה שלנו</h2>
+      <p>דוגמאות מהשטח המציגות את יכולות האיתור והפתרונות המתקדמים שלנו למגוון סוגי נזקי מים</p>
+    </div>
+
+    <div class="home-showcase-image-band">
+      <img data-placeholder="home-showcase-image-1" data-context="Wide cinematic photo showing water damage detection equipment in action - thermal imaging camera displaying moisture patterns on a wall, with professional technician analyzing readings. Premium, technical, realistic photography with water droplets and scanning aesthetics. Dark blue and teal color tones." width="1200" height="400" src="/assets/site-home-showcase-image-1.webp" alt="ציוד איתור נזקי מים מתקדם בפעולה">
+    </div>
+
+    <div class="home-showcase-grid">
+      <article class="home-showcase-capsule">
+        <h3>דירת מגורים - תל אביב</h3>
+        <p>נזילה נסתרת מתחת לריצפה התגלתה באמצעות מצלמה תרמית. הטיפול בוצע ללא שבירת אריחים, תוך שימוש בטכנולוגיית הזרקה ממוקדת.</p>
+        <div class="home-showcase-tags">
+          <span>דירת מגורים</span>
+          <span>איתור תרמי</span>
+          <span>פתרון אל הרס</span>
+        </div>
+      </article>
+
+      <article class="home-showcase-capsule">
+        <h3>בניין משרדים - רמת גן</h3>
+        <p>זיהוי מערכת צנרת פגומה בקירות חיצוניים. השימוש בטכנולוגיית סריקה אקוסטית אפשר איתור מדויק והפחתת עלויות התיקון ב-60%.</p>
+        <div class="home-showcase-tags">
+          <span>מבנה מסחרי</span>
+          <span>סריקה אקוסטית</span>
+          <span>חיסכון משמעותי</span>
+        </div>
+      </article>
+
+      <article class="home-showcase-capsule">
+        <h3>וילה פרטית - הרצליה</h3>
+        <p>נזילה כרונית בגג שלא התגלתה במשך שנים. שילוב של סריקה תרמית ובדיקות לחות חשפה את מקור הבעיה ואפשרה תיקון ממוקד.</p>
+        <div class="home-showcase-tags">
+          <span>נכס יוקרה</span>
+          <span>נזילת גג</span>
+          <span>טיפול מונע</span>
+        </div>
+      </article>
+
+      <article class="home-showcase-capsule">
+        <h3>מתחם תעשייה - פתח תקווה</h3>
+        <p>איתור נזילה במערכת כיבוי אש שגרמה לנזקי מים נרחבים. הטיפול המהיר מנע השבתת פעילות ושמר על רציפות עסקית.</p>
+        <div class="home-showcase-tags">
+          <span>מבנה תעשייתי</span>
+          <span>מערכת כיבוי</span>
+          <span>תגובה מהירה</span>
+        </div>
+      </article>
+
+      <article class="home-showcase-capsule">
+        <h3>קניון - ירושלים</h3>
+        <p>זיהוי נזילות במערכת מיזוג האוויר המרכזית. השימוש בציוד סריקה מתקדם אפשר איתור בזמן אמת ומניעת נזקים למבנה ולסחורה.</p>
+        <div class="home-showcase-tags">
+          <span>מתחם מסחרי</span>
+          <span>מערכת מיזוג</span>
+          <span>זיהוי מוקדם</span>
+        </div>
+      </article>
+
+      <article class="home-showcase-capsule">
+        <h3>בית אבות - חיפה</h3>
+        <p>סריקה מקיפה של מערכות אינסטלציה במבנה רב קומות. האיתור המדויק אפשר תחזוקה מונעת והפחתת סיכון לנזקים עתידיים.</p>
+        <div class="home-showcase-tags">
+          <span>מבנה ציבורי</span>
+          <span>סריקה מקיפה</span>
+          <span>תחזוקה מונעת</span>
+        </div>
+      </article>
+    </div>
+  </div>
+
+  <div class="home-showcase-divider-wrapper">
+    <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 1200 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="contourFade" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" style="stop-color:rgba(125,235,255,0.05);stop-opacity:1"></stop>
+          <stop offset="50%" style="stop-color:rgba(125,235,255,0.18);stop-opacity:1"></stop>
+          <stop offset="100%" style="stop-color:rgba(125,235,255,0.05);stop-opacity:1"></stop>
+        </linearGradient>
+      </defs>
+      <path d="M0,120 L0,50 Q150,35 300,48 T600,30 Q750,45 900,35 T1200,50 L1200,120 Z" fill="var(--bg-light)"></path>
+      <g stroke="url(#contourFade)" stroke-width="1.5" fill="none" opacity="0.6">
+        <path d="M0,65 Q150,50 300,63 T600,45 Q750,60 900,50 T1200,65"></path>
+        <path d="M0,75 Q150,60 300,73 T600,55 Q750,70 900,60 T1200,75"></path>
+        <path d="M0,85 Q150,70 300,83 T600,65 Q750,80 900,70 T1200,85"></path>
+      </g>
+    </svg>
+  </div>
+</section>
+
+<section class="home-testimonials-section" data-layout-spec="בית-testimonials">
+  <div class="home-testimonials-container">
+    <div class="home-testimonials-header">
+      <h2>לקוחות ממליצים</h2>
+      <p>מאות לקוחות פרטיים ועסקיים סומכים על המומחיות שלנו באיתור וטיפול בנזקי מים. הנה מה שהם אומרים:</p>
+    </div>
+    
+    <div class="home-testimonials-grid">
+      <div class="home-testimonials-quote home-testimonials-quote-large">
+        <h3>שירות מקצועי ללא פשרות</h3>
+        <p>"הצוות הגיע במהירות מדהימה, איתר את הנזילה בדיוק כירורגי עם הציוד התרמי המתקדם, ופתר את הבעיה ללא הריסות מיותרות. חסכתי אלפי שקלים בנזקים נוספים הודות לאבחון המדויק והטיפול המהיר."</p>
+        <p class="home-testimonials-attribution">דני כהן, מנהל נכסים, תל אביב</p>
+      </div>
+      
+      <div class="home-testimonials-quotes-small">
+        <div class="home-testimonials-quote home-testimonials-quote-small">
+          <h3>מומחיות שמרגישים</h3>
+          <p>"לאחר חודשים של חיפושים אחר מקור הרטיבות, בינגו פתרו את הבעיה בביקור אחד. הטכנולוגיה התרמית שלהם חשפה נזילה נסתרת שאף אחד לא הצליח לאתר."</p>
+          <p class="home-testimonials-attribution">מיכל לוי, בעלת דירה, חיפה</p>
+        </div>
+        
+        <div class="home-testimonials-quote home-testimonials-quote-small">
+          <h3>שותפים אמינים לביטוח</h3>
+          <p>"כחברת ביטוח, אנחנו עובדים עם בינגו באופן קבוע. הדוחות המפורטים והאבחון המקצועי שלהם מאפשרים לנו לטפל בתביעות במהירות וביעילות מירבית."</p>
+          <p class="home-testimonials-attribution">רון אברהם, מנהל תביעות, חברת ביטוח מובילה</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="home-testimonials-divider-wrapper">
+    <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 1200 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="testimonials-wash-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" style="stop-color:#F6F3EE;stop-opacity:1"></stop>
+          <stop offset="45%" style="stop-color:#D8D2C8;stop-opacity:1"></stop>
+          <stop offset="75%" style="stop-color:#5C6B73;stop-opacity:1"></stop>
+          <stop offset="100%" style="stop-color:#0B2A3A;stop-opacity:1"></stop>
+        </linearGradient>
+      </defs>
+      <path d="M0,100 L0,60 Q150,45 300,52 T600,48 Q750,55 900,45 T1200,50 L1200,100 Z" fill="url(#testimonials-wash-gradient)"></path>
+      <path d="M0,60 Q150,45 300,52 T600,48 Q750,55 900,45 T1200,50" fill="none" stroke="#0B2A3A" stroke-width="1.5" stroke-opacity="0.3"></path>
+    </svg>
+  </div>
+</section>
+
+<section class="home-cta-section" data-layout-spec="בית-cta">
+  <div class="home-cta-container">
+    <div class="home-cta-content">
+      <div class="home-cta-accent-rule"></div>
+      <h2>בואו נדבר על הפתרון שלכם</h2>
+      <p>צוות המומחים שלנו זמין לספק ייעוץ מקצועי ולהציע פתרונות מדויקים לכל אתגר של נזקי מים.</p>
+      <a href="/contact" class="home-cta-button">התחילו שיחה</a>
+      
+      <div class="home-cta-guidance">
+        <div class="home-cta-guidance-col">
+          <p><strong>זמן תגובה:</strong> אנחנו חוזרים תוך 24 שעות בימי עבודה. במצבי חירום, השירות הטלפוני שלנו זמין מיד.</p>
+        </div>
+        <div class="home-cta-guidance-col">
+          <p><strong>מה לכלול בפנייה:</strong> תיאור קצר של הבעיה, מיקום הנכס, ומועד מועדף לביקור או שיחת ייעוץ.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  </main>
+  
+  <footer class="site-footer"><div class="footer-container"><div class="footer-grid"><div class="footer-column footer-about"><img src="/assets/general-logo.webp" alt="בינגו איתור נזקי מים ופתרונות אל הרס" class="logo" /><p class="footer-description">מומחים באיתור נזקי מים ופתרונות ללא הריסה. שירות מקצועי ומהיר לכל סוגי הנזילות.</p></div><div class="footer-column footer-links"><h3 class="footer-heading">קישורים מהירים</h3><ul class="footer-nav"><li><a href="/about">אודות</a></li><li><a href="/services">שירותים</a></li><li><a href="/contact">צור קשר</a></li></ul></div><div class="footer-column footer-contact"><h3 class="footer-heading">יצירת קשר</h3><ul class="contact-list"><li><i class="fas fa-envelope"></i><a href="mailto:[business_email]">[business_email]</a></li><li><i class="fas fa-phone"></i><a href="tel:[business_phone]">[business_phone]</a></li><li><a href="/"><i class="fas fa-map-marker-alt"></i><span>[business_address]</span></a></li></ul></div><div class="footer-column footer-social"><h3 class="footer-heading">עקבו אחרינו</h3><div class="social-links"><a href="[facebook_handle]" aria-label="Facebook" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a><a href="[instagram_handle]" aria-label="Instagram" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a><a href="[whatsapp_handle]" aria-label="WhatsApp" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a></div></div></div><div class="footer-bottom"><div class="footer-legal"><a href="/privacy">Privacy Policy</a><span class="separator">|</span><a href="/terms">Terms &amp; Conditions</a><span class="separator">|</span><a href="/accessibility">Accessibility</a></div><div class="footer-copyright"><p>© 2026 בינגו איתור נזקי מים ופתרונות אל הרס. All rights reserved.</p></div><div class="footer-attribution"><a href="https://zappy5.com" target="_blank" class="zappy-attribution">Generated by Zappy</a></div></div></div></footer>
+  
+  <a href="https://wa.me/[whatsapp_handle]" class="whatsapp-float" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  
+  <script src="/script.js"></script>
+
+    <div data-integration="accessibility:toolbar"></div>
+
+    <script id="zappy-mobile-submenu-script">
+    (function() {
+      function initMobileSubmenuToggles() {
+        if (window.innerWidth > 768) {
+          document.querySelectorAll('.mobile-submenu-toggle').forEach(function(btn) { btn.remove(); });
+          document.querySelectorAll('.sub-menu.mobile-expanded').forEach(function(menu) { menu.classList.remove('mobile-expanded'); });
+          return;
+        }
+        var items = document.querySelectorAll('.nav-menu li:has(.sub-menu), nav li:has(.sub-menu), .navbar li:has(.sub-menu), #navMenu li:has(.sub-menu)');
+        items.forEach(function(li) {
+          if (li.querySelector('.mobile-submenu-toggle')) return;
+          var submenu = li.querySelector('.sub-menu');
+          var parentLink = li.querySelector(':scope > a');
+          if (!submenu || !parentLink) return;
+          var toggleBtn = document.createElement('button');
+          toggleBtn.className = 'mobile-submenu-toggle';
+          toggleBtn.setAttribute('aria-label', 'Toggle submenu');
+          toggleBtn.setAttribute('type', 'button');
+          parentLink.insertAdjacentElement('afterend', toggleBtn);
+          toggleBtn.addEventListener('click', function(e) {
+            e.preventDefault(); e.stopPropagation();
+            document.querySelectorAll('.sub-menu.mobile-expanded').forEach(function(menu) {
+              if (menu !== submenu) { menu.classList.remove('mobile-expanded'); var t = menu.parentElement.querySelector('.mobile-submenu-toggle'); if(t) t.classList.remove('expanded'); }
+            });
+            submenu.classList.toggle('mobile-expanded');
+            toggleBtn.classList.toggle('expanded');
+          });
+        });
+      }
+      if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', initMobileSubmenuToggles); }
+      else { initMobileSubmenuToggles(); }
+      var resizeTimer; window.addEventListener('resize', function() { clearTimeout(resizeTimer); resizeTimer = setTimeout(initMobileSubmenuToggles, 250); });
+      // Re-initialize when mobile menu becomes visible (MutationObserver)
+      var observer = new MutationObserver(function(mutations) {
+        mutations.forEach(function(mutation) {
+          if (mutation.type === 'attributes') {
+            var target = mutation.target;
+            if (target.classList && (target.classList.contains('active') || target.classList.contains('open'))) {
+              setTimeout(initMobileSubmenuToggles, 100);
+            }
+          }
+        });
+      });
+      setTimeout(function() {
+        document.querySelectorAll('.mobile-menu, .nav-menu, #navMenu, nav').forEach(function(menu) {
+          observer.observe(menu, { attributes: true, attributeFilter: ['class', 'style'] });
+        });
+      }, 500);
+    })();
+    </script>
+</body></html>
